@@ -1,0 +1,144 @@
+.header {
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #0ea3e3, #007ac2, #00539e, #142d76, #17044d);
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.nav__item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    @include md {
+      margin-right: 15px;
+    }
+
+    @include sm {
+      margin-right: 0;
+    }
+
+    margin-right: 50px;
+  }
+}
+
+.nav__list {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+.nav__link {
+  @include sm {
+    font-size: 40px;
+    padding: 10px;
+    color: #fff;
+  }
+
+  display: block;
+  transition: all 0.3s;
+  line-height: calc(21 / 16 * 100%);
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.header__btn {
+  @include md {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  margin-left: 50px;
+  line-height: calc(21 / 16 * 100%);
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 9px 18px;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.header__burger {
+  @include sm {
+    display: block;
+  }
+
+  display: none;
+  position: relative;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: $purple;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s;
+  }
+}
+
+.header__nav {
+  @include sm {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+
+  margin-left: auto;
+}
+
+.header__burger span:nth-of-type(2) {
+  top: calc(50% - 5px);
+}
+
+.header__burger span:nth-of-type(3) {
+  top: calc(50% + 5px);
+}
+
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.header__burger.active span:first-of-type {
+  transform: translateX(100%);
+}
+
+.header__burger.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header__burger.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
