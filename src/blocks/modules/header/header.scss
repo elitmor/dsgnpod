@@ -1,6 +1,13 @@
 .header {
   min-height: 100vh;
-  background-image: linear-gradient(to right top, #0ea3e3, #007ac2, #00539e, #142d76, #17044d);
+  background-image: linear-gradient(
+    to right top,
+    #0ea3e3,
+    #007ac2,
+    #00539e,
+    #142d76,
+    #17044d
+  );
 }
 
 .header__top {
@@ -8,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .nav__item {
@@ -112,6 +120,10 @@
     height: 100%;
     transform: translateX(-100%);
     transition: transform 0.3s;
+    background-color: $purple;
+    overflow: hidden;
+    opacity: 0.9;
+    z-index: 100;
   }
 
   margin-left: auto;

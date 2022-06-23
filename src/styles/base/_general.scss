@@ -6,6 +6,7 @@
 
 body {
   @include f400;
+  color: $black;
 }
 
 .wrapper {
@@ -19,7 +20,7 @@ body {
   margin-top: auto;
 }
 
-[class*="__container"] {
+[class*='__container'] {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
@@ -31,7 +32,8 @@ h3,
 h4,
 h5,
 h6,
-ul {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -40,7 +42,23 @@ ul {
   svg {
     width: 50px;
     height: 50px;
-    fill: #9224D6;
+    fill: #9224d6;
     vertical-align: top;
+  }
+}
+
+.circle_pink {
+  &::before {
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    width: 100px;
+    height: 100px;
+    background-color: $pink;
+    border-radius: 50%;
+    content: '';
+    @include lg {
+      display: none;
+    }
   }
 }
