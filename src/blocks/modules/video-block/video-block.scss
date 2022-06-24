@@ -1,0 +1,148 @@
+.video-block__inner {
+  @include lg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.video-block__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-block__title {
+  margin-bottom: 50px;
+}
+
+.video-block__all {
+  line-height: calc(24 / 16 * 100%);
+  letter-spacing: 0.05em;
+  color: $purple;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cards__items {
+  @include lg {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  @include md {
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
+  }
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-auto-rows: minmax(100px, auto);
+  gap: 30px;
+}
+
+.cards__item {
+  position: relative;
+}
+
+.cards__img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+  img {
+    position: relative;
+  }
+}
+
+.cards__count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  background: #1c1b1e;
+  color: $white;
+  border-radius: 10px 0;
+}
+
+.cards__suptitle-name {
+  display: inline-block;
+  position: relative;
+  padding-right: 40px;
+  letter-spacing: 0.05em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    width: 4px;
+    height: 4px;
+    background-color: $black;
+    border-radius: 50%;
+  }
+}
+
+.cards__suptitle-brand {
+  display: inline;
+  letter-spacing: 0.05em;
+}
+
+.cards__title {
+  @include f500;
+
+  font-size: 20px;
+  line-height: calc(30 / 20 * 100%);
+  letter-spacing: 0.02em;
+  color: $black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cards__text {
+  letter-spacing: 0.02em;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.cards__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__play {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  letter-spacing: 0.02em;
+  color: $purple;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/video-block/triangle.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.cards__time {
+  position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/video-block/watch.svg");
+    background-repeat: no-repeat;
+  }
+}
