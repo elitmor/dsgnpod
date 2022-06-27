@@ -68,6 +68,38 @@ p {
   }
 }
 
+.circle_yellow {
+  &::before {
+    position: absolute;
+    top: -15%;
+    left: -15%;
+    width: 150px;
+    height: 150px;
+    background-color: $yellow;
+    border-radius: 50%;
+    content: '';
+    @include lg {
+      display: none;
+    }
+  }
+}
+
+.circle_blue {
+  &::after {
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
+    width: 150px;
+    height: 150px;
+    background-color: $blue;
+    border-radius: 50%;
+    content: '';
+    @include lg {
+      display: none;
+    }
+  }
+}
+
 .title_fz35 {
   @include f500;
   font-size: 35px;

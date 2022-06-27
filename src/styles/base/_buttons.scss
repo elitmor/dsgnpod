@@ -1,0 +1,53 @@
+.btn {
+  @include sm {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  display: inline-block;
+  border: 1px solid $white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: $white;
+  margin-bottom: 75px;
+  cursor: pointer;
+}
+
+.btn_purple {
+  background-color: $purple;
+  margin-right: 20px;
+
+  &:hover {
+    background: linear-gradient(265.37deg, #9224d6 -49.74%, #bd87de 116.53%);
+  }
+}
+
+.btn_transparent {
+  background-color: transparent;
+
+  &:hover {
+    background: linear-gradient(265.37deg, #9224d6 -49.74%, #bd87de 116.53%);
+  }
+}
+
+.header__btn {
+  @include md {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  margin-left: 50px;
+  line-height: calc(21 / 16 * 100%);
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 9px 18px;
+  opacity: 0.8;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
