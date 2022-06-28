@@ -1,4 +1,6 @@
-let data = Array.from(document.querySelectorAll('.cards .cards__item')),
+let data = Array.from(
+    document.querySelectorAll('.cards-video .cards-video__item')
+  ),
   step = 6,
   item = 0;
 

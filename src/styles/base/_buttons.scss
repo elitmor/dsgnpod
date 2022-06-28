@@ -51,3 +51,12 @@
     opacity: 1;
   }
 }
+
+.view-btn_all {
+  line-height: calc(24 / 16 * 100%);
+  letter-spacing: 0.05em;
+  color: $purple;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
