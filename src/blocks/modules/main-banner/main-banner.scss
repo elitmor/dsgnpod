@@ -32,7 +32,7 @@
   padding-right: 40px;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 8px;
     right: 20px;
@@ -74,6 +74,12 @@
   letter-spacing: 0.13em;
   margin-bottom: 20px;
   color: $white;
+}
+
+.social {
+  img {
+    vertical-align: top;
+  }
 }
 
 .social__items {
