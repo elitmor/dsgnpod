@@ -9,22 +9,12 @@
   padding: 15px 25px;
   border-radius: 30px;
   color: $white;
-  margin-bottom: 75px;
+  margin-bottom: 25px;
   cursor: pointer;
-}
-
-.btn_purple {
-  background-color: $purple;
-  margin-right: 20px;
-
-  &:hover {
-    background: linear-gradient(265.37deg, #9224d6 -49.74%, #bd87de 116.53%);
-  }
 }
 
 .btn_transparent {
   background-color: transparent;
-
   &:hover {
     background: linear-gradient(265.37deg, #9224d6 -49.74%, #bd87de 116.53%);
   }

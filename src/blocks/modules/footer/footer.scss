@@ -16,7 +16,8 @@
   max-width: 320px;
 }
 
-.column:nth-child(2), .column:nth-child(3) {
+.column:nth-child(2),
+.column:nth-child(3) {
   max-width: 100px;
 }
 
@@ -46,7 +47,6 @@
   font-size: 14px;
   line-height: calc(21 / 14 * 100%);
   letter-spacing: 0.02em;
-  opacity: 0.7;
   color: inherit;
   transition: all 0.3s;
 
@@ -55,7 +55,7 @@
   }
 
   &:hover {
-    opacity: 1;
+    color: $purple;
   }
 }
 

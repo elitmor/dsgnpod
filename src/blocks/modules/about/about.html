@@ -1,9 +1,21 @@
-<section class="about">
+<section
+  class="about"
+  id="about"
+>
   <div class="about__container">
     <div class="about__inner">
-      <a href="#" class="about__img circle_yellow circle_blue">
-        <img src="img/about/content.jpg" alt="smiling man with glasses" />
-      </a>
+      <div class="about__img circle_yellow circle_blue">
+        <picture>
+          <source
+            srcset="img/about/content.webp"
+            type="image/webp"
+          />
+          <img
+            src="img/about/content.jpg"
+            alt="smiling man with glasses"
+          />
+        </picture>
+      </div>
 
       <div class="about__descr">
         <h3 class="about__title title_fz35">Meet Your Host</h3>
@@ -20,7 +32,6 @@
           simple way to&nbsp;elevate all your listings. Even superhosts would
           benefit from a&nbsp;well-written profile.
         </p>
-        <div class="btn btn_purple about__btn">Learn more</div>
       </div>
     </div>
   </div>

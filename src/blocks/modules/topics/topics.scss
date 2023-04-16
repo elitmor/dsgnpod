@@ -3,7 +3,7 @@
     margin-bottom: 20px;
   }
 
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .topics__title {
@@ -27,6 +27,8 @@
 
 .cards-topics__img {
   img {
+    width: 380px;
+    height: 456px;
     @include xl {
       width: 300px;
       height: 200px;

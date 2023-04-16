@@ -1,11 +1,5 @@
-.video-block__inner {
-  @include lg {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  padding-top: 100px;
-  margin-bottom: 100px;
+.video-block {
+  margin-bottom: 2rem;
 }
 
 .video-block__top {
@@ -39,7 +33,8 @@
 
 .cards-video__img {
   display: block;
-  width: 100%;
+  width: 380px;
+  height: 456px;
   border-radius: 10px;
   margin-bottom: 15px;
 
@@ -65,7 +60,7 @@
   letter-spacing: 0.05em;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 8px;
     right: 20px;
@@ -109,16 +104,21 @@
   padding-left: 30px;
   letter-spacing: 0.02em;
   color: $purple;
+  outline: none;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100px;
     height: 100px;
-    background-image: url("../img/video-block/triangle.svg");
+    background-image: url('../img/video-block/triangle.svg');
     background-repeat: no-repeat;
+  }
+
+  &:focus {
+    border-bottom: 3px solid $purple;
   }
 }
 
@@ -127,13 +127,13 @@
   padding-left: 30px;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/video-block/watch.svg");
+    background-image: url('../img/video-block/watch.svg');
     background-repeat: no-repeat;
   }
 }

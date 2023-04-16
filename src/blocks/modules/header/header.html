@@ -1,71 +1,96 @@
-<header class="header">
+<header
+  class="header"
+  id="header"
+>
   <div class="header__container">
-    <div class="header__inner">
-      <a href="#" class="header__logo logo" aria-label="logo">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#9224d6"
-          viewBox="0 0 122.88 122.88"
-        >
-          <path
-            d="M17.89 0h88.9c8.85 0 16.1 7.24 16.1 16.1v90.68c0 8.85-7.24 16.1-16.1 16.1H16.1c-8.85 0-16.1-7.24-16.1-16.1v-88.9C0 8.05 8.05 0 17.89 0zm16.82 31.06h27.91c5.49 0 9.94.75 13.32 2.23 3.38 1.5 6.18 3.63 8.4 6.42 2.21 2.8 3.8 6.04 4.79 9.74 1 3.71 1.5 7.62 1.5 11.77 0 6.49-.74 11.53-2.22 15.11-1.47 3.58-3.52 6.58-6.15 9-2.63 2.42-5.45 4.03-8.46 4.84-4.12 1.1-7.85 1.65-11.19 1.65h-27.9V31.06zm18.75 13.75v33.18h4.61c3.93 0 6.73-.44 8.4-1.3 1.65-.88 2.96-2.39 3.9-4.55.95-2.18 1.41-5.69 1.41-10.55 0-6.44-1.05-10.83-3.15-13.21-2.11-2.38-5.6-3.56-10.48-3.56h-4.69v-.01z"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </a>
-      <button
-        class="menu__button"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu__list"
+    <div class="header__container">
+      <nav
+        class="menu header__menu"
+        id="nav-menu"
       >
-        <svg class="menu__icon" aria-hidden="true" width="32" height="32">
-          <svg
-            class="menu__icon-menu"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+        <div class="header__top top-header">
+          <a
+            class="logo top-header__link hidden"
+            href="#"
+            aria-label="logo"
           >
-            <path
-              d="M1 9H15V7H1V9ZM1 14H15V12H1V14ZM1 2V4H15V2H1Z"
-              fill="white"
-            />
-          </svg>
-          <svg
-            class="menu__icon-cross"
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9224d6"
+              viewBox="0 0 122.88 122.88"
+            >
+              <path
+                d="M17.89 0h88.9c8.85 0 16.1 7.24 16.1 16.1v90.68c0 8.85-7.24 16.1-16.1 16.1H16.1c-8.85 0-16.1-7.24-16.1-16.1v-88.9C0 8.05 8.05 0 17.89 0zm16.82 31.06h27.91c5.49 0 9.94.75 13.32 2.23 3.38 1.5 6.18 3.63 8.4 6.42 2.21 2.8 3.8 6.04 4.79 9.74 1 3.71 1.5 7.62 1.5 11.77 0 6.49-.74 11.53-2.22 15.11-1.47 3.58-3.52 6.58-6.15 9-2.63 2.42-5.45 4.03-8.46 4.84-4.12 1.1-7.85 1.65-11.19 1.65h-27.9V31.06zm18.75 13.75v33.18h4.61c3.93 0 6.73-.44 8.4-1.3 1.65-.88 2.96-2.39 3.9-4.55.95-2.18 1.41-5.69 1.41-10.55 0-6.44-1.05-10.83-3.15-13.21-2.11-2.38-5.6-3.56-10.48-3.56h-4.69v-.01z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <button
+            class="menu__button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu__list"
+            aria-label="burger menu"
           >
-            <path
-              d="M9.66245 8.00536L13.325 4.34465C13.7848 3.88482 13.7848 3.14286 13.325 2.68304C12.8651 2.22322 12.1232 2.22322 11.6633 2.68304L8.00084 6.34375L4.33924 2.68215C3.87942 2.22232 3.13745 2.22232 2.67763 2.68215C2.21781 3.14197 2.21781 3.88393 2.67763 4.34375L6.34013 8.00447L2.67763 11.6652C2.21781 12.125 2.21781 12.867 2.67763 13.3268C3.13834 13.7866 3.88299 13.7866 4.33924 13.3268L8.00174 9.66607L11.6642 13.3268C12.1241 13.7866 12.866 13.7866 13.3258 13.3268C13.7821 12.867 13.7821 12.125 13.3214 11.6643L9.66245 8.00536Z"
-              fill="white"
-            />
-          </svg>
-        </svg>
-      </button>
-      <nav class="menu header__menu">
-        <ul class="menu__list">
+            <svg
+              class="menu__icon"
+              aria-hidden="true"
+              width="32"
+              height="32"
+            >
+              <use
+                class="menu__icon-menu"
+                href="../../../img/sprites/sprite.svg#menu"
+              ></use>
+              <use
+                class="menu__icon-cross"
+                href="../../../img/sprites/sprite.svg#cross"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="menu__list"
+          id="menu__list"
+        >
           <li class="menu__item">
-            <a href="#" class="menu__link">Home</a>
+            <a
+              class="menu__link"
+              href="#header"
+              >Home</a
+            >
           </li>
-          <li class="nav__item menu__item">
-            <a href="#" class="menu__link">About</a>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#episodes"
+              >Episodes</a
+            >
           </li>
-          <li class="nav__item menu__item">
-            <a href="#" class="menu__link">Shop</a>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#about"
+              >About</a
+            >
           </li>
-          <li class="nav__item menu__item">
-            <a href="#" class="menu__link">Contact</a>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#topics"
+              >Topics</a
+            >
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link"
+              href="#feedback"
+              >Feedback</a
+            >
           </li>
         </ul>
       </nav>
-      <button class="header__btn">Sign up</button>
     </div>
     <section class="main-banner">
       <div class="main-banner__container">
@@ -87,18 +112,23 @@
               escape or&nbsp;a&nbsp;new long-time hobby. Either way you&rsquo;ll
               be&nbsp;absorbed within minutes of&nbsp;arriving.
             </p>
-            <button class="banner-info__btn btn_purple btn">
-              Start Listening
-            </button>
-            <button class="banner-info__btn btn_transparent btn">
+            <a
+              href="#episodes"
+              class="banner-info__btn btn_transparent btn"
+            >
               See all Episodes
-            </button>
+            </a>
             <div class="social">
-              <h3 class="banner-info__social social__suptitle">
+              <h2 class="banner-info__social social__suptitle">
                 ALSO FIND US ON :
-              </h3>
+              </h2>
               <div class="social__items">
-                <a class="social__item" href="#">
+                <a
+                  class="social__item"
+                  href="https://open.spotify.com/"
+                  target="_blank"
+                  aria-label="spotify"
+                >
                   <svg
                     width="32px"
                     height="32px"
@@ -110,7 +140,12 @@
                     />
                   </svg>
                 </a>
-                <a class="social__item" href="#">
+                <a
+                  class="social__item"
+                  href="https://www.pinterest.com/"
+                  target="_blank"
+                  aria-label="pinterest"
+                >
                   <svg
                     width="32px"
                     height="32px"
@@ -122,8 +157,12 @@
                     />
                   </svg>
                 </a>
-                <a class="social__item" href="#">
-                  <?xml version="1.0" encoding="iso-8859-1"?>
+                <a
+                  class="social__item"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  aria-label="youtube"
+                >
                   <svg
                     version="1.1"
                     id="Layer_1"
@@ -151,21 +190,30 @@
               </div>
             </div>
           </div>
-
           <div class="main-banner__img banner-img circle_pink">
             <div class="banner-img__first">
-              <a href="https://www.apple.com/ua/apple-podcasts"
-                ><img
-                  src="img/main-banner/1.jpg"
-                  alt="Image of a Black man podcasting"
-              /></a>
+              <picture>
+                <source
+                  srcset="img/main-banner/first-banner.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="img/main-banner/first-banner.jpg"
+                  alt="Image first-banner"
+                />
+              </picture>
             </div>
             <div class="banner-img__second circle_pink">
-              <a href="https://www.apple.com/ua/apple-podcasts"
-                ><img
-                  src="img/main-banner/2.jpg"
-                  alt="Image of a White man podcasting"
-              /></a>
+              <picture>
+                <source
+                  srcset="img/main-banner/second-banner.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="img/main-banner/second-banner.jpg"
+                  alt="Image second banner"
+                />
+              </picture>
             </div>
           </div>
         </div>

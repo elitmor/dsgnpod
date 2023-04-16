@@ -1,13 +1,13 @@
 .feedback__inner {
-  @include md {
-    padding: 20px 0;
-    margin-bottom: 20px;
-  }
+  background-image: linear-gradient(
+    to right top,
+    #0ea3e3,
+    #007ac2,
+    #00539e,
+    #142d76,
+    #17044d
+  );
 
-  background-image:
- linear-gradient(to right top, #0ea3e3, #007ac2, #00539e, #142d76, #17044d);
-  padding: 100px 0;
-  margin-bottom: 100px;
   text-align: center;
   border-radius: 5px;
 }
@@ -40,7 +40,7 @@
 
 .form__input {
   @include md {
-    width: 100%;
+    min-width: 100%;
     margin-bottom: 15px;
   }
 
@@ -51,10 +51,10 @@
 }
 
 .form__btn {
+  border-radius: 5px;
+  margin: 0;
+  background-color: $purple;
   @include md {
     width: 100%;
   }
-
-  border-radius: 5px;
-  margin: 0;
 }
